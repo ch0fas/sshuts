@@ -10,7 +10,7 @@ delete_binary()
 }
 
 # Main Flow -> Checking if a previous binary exists
-if [ -f "${1::-2}" ];
+if [ -f "${1::-2}.o" ];
 then
     echo "Old binary found, creating new one"
     delete_binary "$1"
