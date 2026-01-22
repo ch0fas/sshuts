@@ -5,7 +5,7 @@
 # Function to delete the previous binary
 delete_binary()
 {
-    BINARY_NAME="${1::-2}"
+    BINARY_NAME="${1::-2}.o"
     rm $BINARY_NAME
 }
 
@@ -19,7 +19,7 @@ then
     ./$BINARY_NAME ${@:2}
 else
     echo "Creating binary for first time"
-    BINARY_NAME="${1::-2}"
+    BINARY_NAME="${1::-2}.o"
     gcc $1 -o $BINARY_NAME
     ./$BINARY_NAME ${@:2}
 fi
