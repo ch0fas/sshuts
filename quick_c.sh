@@ -14,7 +14,7 @@ if [ -f "${1::-2}" ];
 then
     echo "Old binary found, creating new one"
     delete_binary "$1"
-    BINARY_NAME="${1::-2}"
+    BINARY_NAME="${1::-2}.c"
     gcc $1 -o $BINARY_NAME
     ./$BINARY_NAME ${@:2}
 else
