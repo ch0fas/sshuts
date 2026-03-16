@@ -1,3 +1,6 @@
 # Ignoring C files
 *.c
 *.o
+
+# Other things to ignore
+*.txt
