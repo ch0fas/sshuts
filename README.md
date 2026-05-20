@@ -31,6 +31,15 @@ pword_maker -l=10 -char -nums -am=10 -o=foo.txt
 * -am: The amount of passwords to generate (default: 10)
 * -o: The file to output the generated text (default: foo.txt)
 
+### ☕ Quick-J
+Quick-J is a tool for people learning Java to more quickly compile and run their java programs.
+
+**USAGE**
+```
+quick_j Foo.java
+```
+This command runs both `javac Foo.java` and `java Foo` at the same time. If there are any compilation errors, it will show them in full.
+
 
 
 # Future scripts
